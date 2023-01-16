@@ -1,0 +1,35 @@
+﻿@model List<ProjectTwo.Models.Domain.Employee>
+
+@{
+}
+
+<h1>Students</h1>
+
+<table class="table table-striped table-dark">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>AdSoyad</th>
+            <th>Bolum</th>
+            <th>OgrenciNo</th>
+            <th>Kayıt Tarihi</th>
+            <th>Doğum Tarihi</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.AdSoyad</td>
+                <td>@employee.Bolum</td>
+                <td>@employee.OgrenciNo</td>
+                <td>@employee.KayitTarih.ToString("dd-MM-yyyy")</td>
+                <td>@employee.DTarih.ToString("dd-MM-yyyy")</td>
+                <td> <a href="Employees/View/@employee.Id">View</a> </td>
+            </tr>
+        }
+    </tbody>
+</table>

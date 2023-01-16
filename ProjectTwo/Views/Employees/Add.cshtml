@@ -1,0 +1,31 @@
+﻿@model ProjectTwo.Models.AddEmployeeViewModel
+
+@{
+}
+
+
+<h1>Add Student</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Ad Soyad</label>
+        <input type="text" class="form-control" asp-for="AdSoyad">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Bolum</label>
+        <input type="text" class="form-control" asp-for="Bolum">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Ogrenci No</label>
+        <input type="number" class="form-control" asp-for="OgrenciNo">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Kayıt Tarihi</label>
+        <input type="date" class="form-control" asp-for="KayitTarih">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Doğum Tarihi</label>
+        <input type="date" class="form-control" asp-for="DTarih">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
